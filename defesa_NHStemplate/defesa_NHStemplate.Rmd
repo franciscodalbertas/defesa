@@ -60,12 +60,10 @@ class: inverse
 
 ## Capítulo 1
 
-
 ## Capitulo 2
 
 
 ## Capitulo 3
-
 
 ## Conclusão geral
 
@@ -79,6 +77,62 @@ class: inverse, middle, center
 
 ---
 
-# Introdução geral
+```{r echo=FALSE, fig.align='center',out.width="48%"}
+
+
+knitr::include_graphics("figures/earth.jpg")
+
+
+```
+
+---
+
+
+
+```{r echo=FALSE, fig.align='center',out.width="60%"}
+
+
+knitr::include_graphics("figures/rockstrom_planet_bound.png")
+
+
+```
+
+
+Rockström, J.et al. A safe operating space for humanity. Nature (2009).
+
+???
 
 impacto da agricultura e do aquecimento global para a biodiversidade
+
+importancia dos se pra agricultura
+
+manutencao de areas protegigas
+
+governanca
+
+
+---
+
+## Beneficios da natureza para as pessoas (servicos ecossistemicos)
+
+```{r echo=FALSE, fig.align='center',out.width="42%"}
+
+
+knitr::include_graphics("figures/ecosystem-services-diagram.jpg")
+
+
+```
+
+
+TEEB, The Economics of Ecosystems and Biodiversity: Ecological and Economic Foundations (2010)
+
+---
+
+```{r echo=FALSE, fig.align='center',out.width="100%"}
+
+
+knitr::include_graphics("figures/agriculture_surface.png")
+
+
+```
+
