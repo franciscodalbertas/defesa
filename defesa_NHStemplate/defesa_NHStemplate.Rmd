@@ -60,19 +60,9 @@ background-size: contain
 --
 
 .pull-left[
-<<<<<<< HEAD
-
-
 
 ## Introdução geral
 
-=======
-
-
-
-## Introdução geral
-
->>>>>>> def45e96142cf79ff1a804577318a22d773d36c2
 ## Capítulo 2
 
 ## Capitulo 3
@@ -382,20 +372,11 @@ CAPANO et al., 2019; DRESCHER; BRENNER, 2018). Agriculture cover >
 In turn, private properties shelter vasts amounts of native vegetation, for instance, 56% of the United States forests (SASS; BUTLER; MARKOWSKI-LINDSAY, 2017), 28% of Europe’s forests (PULLA et al., 2013) and 53% of the native vegetation in Brazil (FREITAS; ENGLUND et al., 2017).
 
 ---
-<<<<<<< HEAD
 background-image: url("figures/floresta_cut.jpg")
 background-size: contain
 
 # Introdução
 
-
-
-
-
-=======
-# Introdução
-
->>>>>>> def45e96142cf79ff1a804577318a22d773d36c2
 .pull-left[
 
 - No Brasil, o código florestal é fundamental para a manutenção da vegetação nativa.
@@ -403,7 +384,6 @@ background-size: contain
 - São 167 milhões de ha como RL
 
 - Their location should be adequately planned to support species survival in fragmented landscape  while favoring ecosystem services that can increase agricultural productivity
-<<<<<<< HEAD
 
 **adequar isso!**
 
@@ -436,22 +416,10 @@ To achieve the objectives of Legal Reserves, their location should be adequately
 
 
 knitr::include_graphics("figures/lampada.jpg")
-=======
-]
 
-.pull-right[
-
-```{r echo=FALSE, fig.align='center',out.width="100%"}
-
-
-knitr::include_graphics("figures/floresta.jpg")
->>>>>>> def45e96142cf79ff1a804577318a22d773d36c2
 
 
 ```
-
-
-<<<<<<< HEAD
 
 
 ???
@@ -467,6 +435,7 @@ and consider the implications of their choices for biodiversity conservation and
 - Additionally, we evaluated whether farmers are choosing to allocate Legal Reserves near existing native vegetation patches, which would increase patch size and could contribute to biodiversity conservation and ecosystem services provision.
 
 ---
+
 # Métodos
 ### Área de estudo
 
@@ -526,8 +495,6 @@ knitr::include_graphics("figures/box1_2.jpg")
 
 - drivers que a gente mediu
 
-=======
-]
 
 ???
 
@@ -538,18 +505,3 @@ Brazil (SOARES-FILHO et al., 2014)
 
 To achieve the objectives of Legal Reserves, their location should be adequately planned to support species survival in fragmented landscape  while favoring ecosystem services that can increase agricultural productivity.
 
----
-
-```{css, echo = F}
-
-
-<style type="figures/floresta.jpg">
-body{
- background-image: url(bg_img.jpg);
- background-size: 100% 50%;
- background-repeat:no-repeat;
-}
-</style>
-
-```
->>>>>>> def45e96142cf79ff1a804577318a22d773d36c2
