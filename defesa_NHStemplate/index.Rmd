@@ -175,9 +175,9 @@ knitr::include_graphics("figures/controle.pragas.jpg")
 
 .footnote[
 
-[1]*R. Costanza,et al. Changes in the global value of ecosystem services. Global Environmental Change.(2014)*
+[1]*R. Costanza,et al. Changes in the global value of ecosystem services. Global Environmental Change(2014)*
 
-[2] *Pimentel et al. Economic and environmental benefits of biodiversity. BioScience. 1997.*;*Lautenbach et al. Spatial and Temporal Trends of Global Pollination Benefit. en. PLoS ONE. 2012.*; *Naranjo et al. Economic Value of Biological Control in Integrated Pest Management of Managed Plant Systems. Annual Review of Entomology. 2015.* 
+[2] *Pimentel et al. Economic and environmental benefits of biodiversity. BioScience. 1997.*;*Lautenbach et al. Spatial and Temporal Trends of Global Pollination Benefit. en. PLoS ONE. 2012.*; *Naranjo et al. Economic Value of Biological Control in Integrated Pest Management of Managed Plant Systems. Annual Review of Entomology (2015).* 
 
 ]
 
@@ -241,7 +241,7 @@ uma série de politicas para conservação e restauração em propriedades priva
 
 
 .footnote[
-*Garibaldi et al. Working landscapes need at least 20% native habitat. Conservation Letters.2020.*
+*Garibaldi et al. Working landscapes need at least 20% native habitat. Conservation Letters (2020).*
 ]
 
 ---
@@ -295,13 +295,23 @@ explicar rapidamente sobre o cf, compensação etc e contextualizar a problemát
 
 ---
 
-class: inverse
+class: inverse,  middle, center
 
 # Capitulo 2
-## Private reserves suffers from the same location biases of public protected areas
-### Francisco d’Albertas, Adrian González-Chaves, Clarice Borges-Matosa, Vitor Zago de Almeida Paciello, Martine Maron, Jean Paul Metzger
 
-#### Publicado como:
+### Private reserves suffers from the same location biases of public protected areas
+
+<br>
+
+#### Francisco d’Albertas, Adrian González-Chaves, Clarice Borges-Matosa, Vitor Zago de Almeida Paciello, Martine Maron, Jean Paul Metzger
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+##### Publicado como:
 ##### d’ALBERTAS, F. et al. Private reserves suffer from the same location biases of public protected areas. Biological Conservation, v. 261, p. 109283, 1 set. 2021. 10.1016/j.biocon.2021.109283
 
 ---
@@ -319,7 +329,7 @@ knitr::include_graphics("figures/Spatial-distribution-of-the-worlds-protected-ar
 
 .footnote[
 *UNEP-WCMC IUCN, NGS. Protected Planet Report. Cambridge UK; Gland,
-Switzerland; e Washington, D.C., USA., 2018.*]
+Switzerland; e Washington, D.C., USA (2018).*]
 
 ???
 
@@ -341,7 +351,7 @@ knitr::include_graphics("figures/bias.png")
 
 ```
 
-.footnote[*Venter et al. Bias in protected-area location and its effects on long-term aspirations of biodiversity conventions. Conservation Biology. 2018.
+.footnote[*Venter et al. Bias in protected-area location and its effects on long-term aspirations of biodiversity conventions. Conservation Biology (2018).
 *]
 
 ???
@@ -361,7 +371,7 @@ knitr::include_graphics("figures/MapChart_Map.png")
 
 ```
 
-.footnote[*SASS et al. Forest ownership in the conterminous United States circa 2017: distribution of eight ownership types - geospatial dataset. 2017*; *PULLA et al. Mapping the distribution of forest ownership in Europe.2013*; *FREITAS et al. Potential increase of legal deforestation in Brazilian Amazon after Forest Act revision. Nature Sustainability. 2018*]
+.footnote[*SASS et al. Forest ownership in the conterminous United States circa 2017: distribution of eight ownership types - geospatial dataset. 2017*; *PULLA et al. Mapping the distribution of forest ownership in Europe.2013*; *FREITAS et al. Potential increase of legal deforestation in Brazilian Amazon after Forest Act revision. Nature Sustainability (2018)*]
 
 ???
 
@@ -486,39 +496,12 @@ knitr::include_graphics("figures/box1_2.jpg")
 
 ```
 ]
-
----
-# Métodos
-### Análise dos dados
-
-
-aqui vale criar as abas!!
-
-
-
-
-$$ Proporção RL \sim variaveis \ independentes $$
-
-
-- drivers que a gente mediu
-
-
-
-???
-
-Voltando ao caso Brasileiro
-
-At present, Legal Reserves cover 167 million ha (METZGER; BUSTAMANTE et al., 2019), representing nearly half of the remaining native vegetation areas in
-Brazil (SOARES-FILHO et al., 2014)
-
-To achieve the objectives of Legal Reserves, their location should be adequately planned to support species survival in fragmented landscape  while favoring ecosystem services that can increase agricultural productivity.
-
 ---
 
 # Métodos
 ### Análise dos dados
 
-Modelos hierarquicos com distribuição binomial de probabilidades 
+Modelos hierárquicos com distribuição binomial de probabilidades
 
 ```{r xaringan-panelset, echo=FALSE}
 
@@ -532,17 +515,299 @@ xaringanExtra::use_panelset()
    
 
    $$ Proporção \ RL \sim variaveis \ independentes $$
+```{r echo=FALSE, fig.align='center'}
+
+knitr::include_graphics("figures/cat_RL.png")
+
+```
+   
+```{r echo=FALSE, fig.align='center',out.width="20%"}
+
+knitr::include_graphics("figures/donut_box2.png")
+
+```
+     
+   
    
    ]
 
    .panel[.panel-name[Pergunta 2]
 
-   Take a look at the R code in that other panel.
+$$ Tipo \ de \ uso  \sim variaveis \ independentes $$
+```{r echo=FALSE, fig.align='center', out.width="40%"}
+
+knitr::include_graphics("figures/box1_1.jpg")
+
+```
+
+
+
    ]
    
    .panel[.panel-name[variáveis independentes]
 
-   Take a look at the R code in that other panel.
+
+```{css, echo=F}
+    /* Table width = 100% max-width */
+
+    .remark-slide table{
+        width: 100%;
+    }
+
+    /* Change the background color to white for shaded rows (even rows) */
+
+    .remark-slide thead, .remark-slide tr:nth-child(2n) {
+        background-color: white;
+    }
+```
+
+.scroll-box-10[
+
+```{r echo=FALSE, warning=FALSE,message=FALSE}
+
+library(kableExtra)
+
+tabela <- read.csv("tables/table1.csv",sep=";")[,2:3]
+
+tabela %>%
+#   kbl() %>%
+# kable_styling(bootstrap_options = c("basic", "hover", "condensed", "responsive"), font_size = 18,full_width = T)
+   DT::datatable(class = "compact", rownames = FALSE, 
+   options = list(dom = 'tBp', 
+   pageLength = 8))
+
+```
+]
+   
+   
+   
+   
    ]
    
    ]
+   
+   
+  
+???
+
+Voltando ao caso Brasileiro
+
+At present, Legal Reserves cover 167 million ha (METZGER; BUSTAMANTE et al., 2019), representing nearly half of the remaining native vegetation areas in
+Brazil (SOARES-FILHO et al., 2014)
+
+To achieve the objectives of Legal Reserves, their location should be adequately planned to support species survival in fragmented landscape  while favoring ecosystem services that can increase agricultural productivity.
+
+---
+# Resultados e Discussão
+
+
+ .panelset[
+   .panel[.panel-name[Tamanho de efeito]
+
+```{r echo=FALSE, fig.align='center', fig.cap="Proporção de RL",out.width="60%"}
+
+knitr::include_graphics("figures/fig3_cap1.jpg")
+
+```
+   
+```{r echo=FALSE, fig.align='center',out.width="60%",fig.cap="Localização RL"}
+
+knitr::include_graphics("figures/fig4_cap1.jpg")
+
+```
+     
+   
+   
+   ]
+
+   .panel[.panel-name[Representação gráfica]
+
+```{r echo=FALSE, fig.align='center', out.width="95%"}
+
+knitr::include_graphics("figures/graphical_abstract_v07-02.png")
+
+```
+
+
+
+   ]
+   
+]
+
+???
+
+- The major drivers influencing Legal Reserve allocation are vegetation infarm,
+property size, transportation costs, and agricultural suitability. 
+
+- Landownders with larger properties that have lower agricultural suitability, higher transportation costs and more vegetation in farm are more likely to invest in Legal reserves. 
+
+- This suggests that economic processes are the primary driver determining landowner
+decisions around investment in Legal Reserves.
+
+- We also show that farmers owning properties with low vegetation cover are unlikely to invest in in-farm restoration to achieve Legal Reserve compliance, instead opting for compensation schemes such as purchase credits to compensate their vegetation deficit on other properties. 
+
+- Decisions based on these criteria will result in the concentration of Legal Reserves and native vegetation in private properties of lower agricultural value in the future, while leaving a large number of properties with few areas of forest under protection.
+
+- This replicates biases in the spatial distribution of public protected areas
+
+
+- Especificar que intervençoes poderiam ser necessarias pra melhorar isso!
+
+Pastagm: 
+
+- Isso eh interessante pq se fala mto em priorizar restauração em larga escala em áreas de pastagem, mas pode haver resistência por parte dos proprietários;
+
+
+---
+
+background-image: url("figures/fundo_slide_conclusaorl.jpg")
+background-size: contain
+
+# Resultados e Discussão
+
+### Garantir o papel das RL:
+   
+
+- regular e executar a legislação;
+  
+
+   
+- planejamento espacial da alocação de RL;
+
+
+   
+- políticas de intentivo a restauração de RL (ex. PSA)
+  
+  
+   
+- atividades econômicas dentro de RLs;
+  
+ 
+   
+- incentivos de mercado;
+   
+
+???
+
+destacar resultados q mais chamam atenção!
+
+
+Vies:
+
+- this bias disregards the local and regional importance of forest patches for biodiversity conservation and ecosystem service provision and the benefits that come from restoration in high priority degraded areas;
+
+- The uneven distribution of protected forests in private land will have a direct
+impact on biodiversity conservation. Tropical priority areas for biodiversity conservation often have unfavorable economic conditions for restoration;
+
+- monocultures within landscapes with low vegetation cover have a deficit in ecosystem services provision (DAINESE et al., 2019), which can negatively impact yields through dilution effects;
+
+- Impacto sobre os potenciais beneficios: This suggests that trend for low-vegetatation areas to become less vegetated into the future could carry significant yield penalties, that could be even further exacerbated by climate change;
+
+- Unfortunately, while there is a clear incentive to join the CAR system, the
+economic incentive of complying with the legislation and in particular to invest in
+restoration is low (AZEVEDO et al., 2017). As a consequence, the existing uneven
+pattern of native vegetation distribution tends to be maintained
+
+
+ completar!!
+
+---
+
+class: inverse,  middle, center
+
+# Capitulo 3
+
+### When do benefits from ecosystem restoration offset costs?
+
+<br>
+
+#### Francisco d’Albertas, Gerd Sparovek, Luis Fernando Guedes Pinto, Camila Hohlenwerger, Jean Paul Metzger
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+---
+
+# Introdução
+
+```{r echo=FALSE, fig.align='center', out.width="75%"}
+
+knitr::include_graphics("figures/bending_curve.jpg")
+
+```
+
+
+.footnote[
+*Leclère, et al. Bending the curve of terrestrial biodiversity needs an integrated strategy. Nature (2020).
+.*
+]
+
+???
+
+Ja falei dos problemas de ameaça a biodiversidade 
+
+E tb da importância da restauração, inclsusive em propriedades privadas!
+
+
+pra reverter a perda de biodiv. e serviços,  precisamos adotar uma trajetória de recuperação
+
+---
+background-image: url("figures/restoration_decade.jpg")
+background-size: contain
+
+
+# Introdução
+
+.pull-right[
+
+```{r echo=FALSE,out.width="90%",fig.align='right'}
+
+knitr::include_graphics("figures/UNLOGO.jpg")
+
+```
+
+<br>
+
+## restauar 350 Mha de areas degradadas até 2030 
+
+]
+
+???
+
+However, these actions face important difficulties to be implemented given the high
+costs involved. These include direct restoration costs, fencing and opportunity cost
+of forgone production. Recent work has highlighted that these costs can act as
+a major financial barrier to the wide-scale adoption of restoration
+
+---
+
+background-image: url("figures/contraste_paisagens.jpg")
+background-size: contain
+
+# Introdução
+
+???
+
+alem dos custos, a restauracao pode trazer uma serie de benefícios, como eu ja falei na introdução;
+
+---
+
+# Perguntas
+
+
+1. Can restoration results in financial benefits and in which conditions benefits might overcome intervention costs?
+
+1. How net restoration costs can be compared with overall profitability of farms and carbon prices?
+
+```{r echo=FALSE, fig.align='center',out.width="20%"}
+
+
+knitr::include_graphics("figures/lampada.jpg")
+
+
+
+```
