@@ -5,7 +5,7 @@ author:
   - "Francisco d'Albertas Gomes de Carvalho"
   - "Jean-Paul Metzger (orientador)"
 institute: "Departamento de Ecologia/IB-USP"
-date: "Presentation Date"
+date: "28 de março de 2022"
 output:
   xaringan::moon_reader:
     css: 
@@ -177,7 +177,7 @@ knitr::include_graphics("figures/controle.pragas.jpg")
 
 [1]*R. Costanza,et al. Changes in the global value of ecosystem services. Global Environmental Change(2014)*
 
-[2] *Pimentel et al. Economic and environmental benefits of biodiversity. BioScience. 1997.*;*Lautenbach et al. Spatial and Temporal Trends of Global Pollination Benefit. en. PLoS ONE. 2012.*; *Naranjo et al. Economic Value of Biological Control in Integrated Pest Management of Managed Plant Systems. Annual Review of Entomology (2015).* 
+[2] *Pimentel et al. Economic and environmental benefits of biodiversity. BioScience (1997).*;*Lautenbach et al. Spatial and Temporal Trends of Global Pollination Benefit. en. PLoS ONE (2012).*; *Naranjo et al. Economic Value of Biological Control in Integrated Pest Management of Managed Plant Systems. Annual Review of Entomology (2015).* 
 
 ]
 
@@ -811,3 +811,140 @@ knitr::include_graphics("figures/lampada.jpg")
 
 
 ```
+
+---
+
+# Métodos
+## Área de estudo
+
+```{r echo=FALSE, fig.align='center',out.width="50%"}
+
+
+knitr::include_graphics("figures/studysite_compl.jpeg")
+
+
+
+```
+
+---
+# Métodos
+
+
+ .panelset[
+   .panel[.panel-name[cenários]
+   
+
+```{r echo=FALSE, fig.align='center',out.width="100%"}
+
+
+knitr::include_graphics("figures/Cenarios.jpg")
+
+
+
+```
+
+]
+
+
+   .panel[.panel-name[Farm-level vs. Regional-level]
+   
+
+.pull-left[
+
+
+### farm-level (fl)
+```{r echo=FALSE, out.width="80%"}
+
+knitr::include_graphics("figures/fl.gif")
+
+```
+]
+
+.pull-right[
+
+### regional-level (rl)
+
+```{r echo=FALSE, out.width="80%"}
+
+knitr::include_graphics("figures/rl.gif")
+
+```
+]
+
+]
+
+]
+
+---
+
+# Métodos
+## Variáveis medidas nos cenários
+
+```{r echo=FALSE, out.width="80%",fig.align='center'}
+
+knitr::include_graphics("figures/variaveis_cenarios.jpg")
+
+```
+
+---
+
+# Resultados e Discussão
+
+```{r echo=FALSE, out.width="100%",fig.align='center'}
+
+knitr::include_graphics("figures/cashflow_panel_withveg7.jpeg")
+
+```
+
+---
+
+# Resultados e Discussão
+
+```{r echo=FALSE, out.width="100%",fig.align='center'}
+
+knitr::include_graphics("figures/carbon.jpeg")
+
+```
+
+---
+# Resultados e Discussão
+
+- Forest restoration costs can be offset by yield and production increases. This was true when farms had >10% forest cover at the baseline and forest cover was up to 25% by the end;
+
+- Farmers who had historically deforested less had a net financial benefit;
+
+- There is a clear threshold around 25% forest cover above which additional restoration substantially increases costs;
+
+- $CO_2$ prices are not enough to offset costs. Values would have to be substantially higher
+
+---
+
+class: inverse,  middle, center
+
+# Capitulo 4
+
+### Agricultural certification as a complementary tool for environmental law compliance
+
+<br>
+
+#### Francisco d’Albertas, Patricia Ruggiero, Luís Fernando Guedes Pinto, Gerd Sparovek, Jean Paul Metzger
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+---
+
+# Introdução
+
+```{r echo=FALSE, out.width="100%",fig.align='center'}
+
+knitr::include_graphics("figures/certification_map.jpg")
+
+```
+
+.footnote[
+*Tayleur et al. Where are commodity crops certified, and what does it mean for conservation and poverty alleviation? Biological Conservation (2018).*]
+
