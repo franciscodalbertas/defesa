@@ -937,6 +937,40 @@ class: inverse,  middle, center
 
 ---
 
+background-image: url("figures/agri_cert.jpg")
+background-size: contain
+
+# Introdução
+
+.pull-left[
+
+### Certificação
+
+- boas práticas (socioambientais, econômicas);
+
+- adesão voluntária;
+
+- acesso a novos mercados;
+
+- impactos mensuráveis;
+
+
+
+
+]
+
+
+???
+
+Agricultural sustainable standards are an important non-state governance intervention to reduce commodities pressures on biodiversity (LENZEN et al., 2012).
+
+In a certification process, a set of criteria of best practices on economic, social, and environmental aspects are defined and used to monitor and certify farmers (LAMBIN; THORLAKSON, 2018). The label gives farmers access to a market of consumers willing to pay a higher price for prime products (FERRARO; UCHIDA;
+CONRAD, 2005). Often, this translates into economic gains for farmers and positive social and, potentially, environmental outcomes (MEEMKEN et al., 2021; OYA; SCHAEFER; SKALIDOU, 2018). Despite this, conservation benefits derived from certification are less clear (BLACKMAN; RIVERA, 2011; MEEMKEN et al., 2021).
+Even though evidence on the positive biodiversity conservation impact of certification has been advocated [e.g. Haggar et al. (2015); hardt_does_2015 ], there is still uncertainty of whether or not observed differences can be attributed to sustainable standards or if some pre-existing conditions are impacting the results (MEEMKEN
+et al., 2021)
+
+---
+
 # Introdução
 
 ```{r echo=FALSE, out.width="100%",fig.align='center'}
@@ -948,3 +982,173 @@ knitr::include_graphics("figures/certification_map.jpg")
 .footnote[
 *Tayleur et al. Where are commodity crops certified, and what does it mean for conservation and poverty alleviation? Biological Conservation (2018).*]
 
+---
+
+# Introdução
+
+```{r echo=FALSE, fig.align='center',out.width="50%"}
+
+knitr::include_graphics("figures/data_certificacao.png")
+
+```
+
+.footnote[*Meemken et al. Sustainability standards in global agrifood supply chains. Nature Food(2021*).]
+
+???
+
+---
+
+# Perguntas
+
+
+A certificação tem um efeito detectável:
+
+   1. na taxa de desmatamento?
+   1. na taxa de regeneração ?
+   1. na proporção de cobertura?
+   1. na proporção de cobertura das APPs? 
+
+repensar, talves deixar só uso e cobertura do solo!!
+
+```{r echo=FALSE, fig.align='center',out.width="20%"}
+
+
+knitr::include_graphics("figures/lampada.jpg")
+
+
+
+```
+
+
+---
+
+# Métodos
+
+```{r echo=FALSE, fig.align='center',out.width="85%"}
+
+knitr::include_graphics("figures/study_site2.jpg")
+
+```
+
+???
+
+Muncipios no Cerrado e na Mata Atlantica, com certificação da RA
+
+Eu cruzei os dados do Car pros municipios certificados e tb selecionei todas as propriedades desses municipios como controle
+
+---
+
+# Métodos
+
+ .panelset[
+   .panel[.panel-name[Matching]
+
+```{r echo=FALSE, fig.align='center',out.width="55%"}
+
+knitr::include_graphics("figures/matching.png")
+
+```
+   
+
+
+]
+
+
+   .panel[.panel-name[Resultado do pareamento]
+   
+.pull-left[
+```{r echo=FALSE, fig.align='center',out.width="100%"}
+
+knitr::include_graphics("figures/sup_smd_ma.jpeg")
+
+```
+]
+
+.pull-right[
+```{r echo=FALSE, fig.align='center',out.width="100%"}
+
+knitr::include_graphics("figures/sup_smd_ce.jpeg")
+
+```
+]
+
+]
+
+]
+
+---
+
+# Métodos
+## Impacto da certificação
+
+**Diferença-das-diferenças (did)** com $t_0$ variando:
+
+$$ variáveis \ dependentes \sim variáveis \ independentes $$
+.pull-left[
+
+### Variáveis dependentes
+
+- taxa de desmatamento;
+
+- taxa de regeneração;
+
+- déficit de cobertura;
+
+- proporção de cobertura APPs;
+
+
+]
+
+.pull-right[
+
+### Variáveis independentes
+
+- tratamento
+- tempo
+- data de início da certificação ( $t_0$ )
+
+]
+
+---
+
+# Resultados
+
+ .panelset[
+   .panel[.panel-name[Mata Atlântica]
+
+```{r echo=FALSE, fig.align='center',out.width="50%"}
+
+knitr::include_graphics("figures/panel_regression_results_ma_deficit.jpeg")
+
+```
+   
+
+
+]
+
+
+   .panel[.panel-name[Cerrado]
+   
+```{r echo=FALSE, fig.align='center',out.width="50%"}
+
+knitr::include_graphics("figures/panel_regression_results_ce_deficit.jpeg")
+
+```
+
+
+]
+
+]
+
+---
+# Resultados
+## Mata Atlântica
+
+Efeito de antecipação
+
+
+```{r echo=FALSE, fig.align='center',out.width="100%"}
+
+knitr::include_graphics("figures/temp_leg.jpg")
+
+```
