@@ -9,6 +9,15 @@
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/panelset-0.2.6/panelset.css" rel="stylesheet" />
     <script src="libs/panelset-0.2.6/panelset.js"></script>
+    <script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+    <script src="libs/jquery-3.5.1/jquery.min.js"></script>
+    <link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+    <script src="libs/datatables-binding-0.18/datatables.js"></script>
+    <link href="libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+    <script src="libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+    <link href="libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
+    <script src="libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
     <link rel="stylesheet" href="css/nhsr.css" type="text/css" />
     <link rel="stylesheet" href="css/nhsr-fonts.css" type="text/css" />
   </head>
@@ -24,7 +33,12 @@ class: title-slide, left, bottom
 ----
 ## **Departamento de Ecologa/IB-USP**
 ### Francisco d'Albertas Gomes de Carvalho, Jean-Paul Metzger (orientador)
-### Presentation Date
+### 28 de março de 2022
+
+???
+
+- Introdução da tese e título
+
 
 ---
 class: inverse
@@ -54,15 +68,28 @@ background-size: contain
 
 ]
 
+???
+
+- Eu vou começar com uma visão do alto da apresentação, mostrando a estrutura geral (mas já com um panorâma do nosso objeto principal de estudo, o BR)
+
+- ler os itens;
+
+
 
 ---
 class: inverse, middle, center
 
 # Introdução geral
 
+
 ---
 
 &lt;img src="figures/earth.jpg" width="48%" style="display: block; margin: auto;" /&gt;
+
+???
+
+A maioria dos trabalhos de Ecologia começa com uma perspectiva sombria sobre o nosso planeta;
+
 
 ---
 
@@ -75,14 +102,11 @@ class: inverse, middle, center
 ]
 ???
 
-impacto da agricultura e do aquecimento global para a biodiversidade
+- Eu resolvi seguir a mesma linha.
 
-importancia dos se pra agricultura
+- Essa figura é de um trabalho já clássico do Johan Rockstrom em que os autores traçaram os limites planetários para manter o planeta com condições de sustentar vida como conhecemos;
 
-manutencao de areas protegigas
-
-governanca
-
+- Dentre os principais limite, a perda de biodiversidade, as mudanças climáticas e a poluição por Nitrogênio já ultrapassaram os limites seguros!
 
 ---
 
@@ -95,6 +119,15 @@ governanca
 .footnote[
 *The Economics of Ecosystems and Biodiversity: Ecological and Economic Foundations (2010)*
 ]
+
+???
+
+- Ultrapassar esses limites implica em graves consequências para nós;
+
+- A natureza provê benefícios fundamentais para nõs, que são conhecidos também como serviços ecossistêmicos;
+
+- Os serviços podem ser classificados de várias formas, mas uma das usuais é dividi-los em SE de suporte (habitat para spp); provisão de água, madeira; regulação do clima; serviços culturais como turimso de meio ambiente;
+
 
 ---
 
@@ -122,11 +155,24 @@ governanca
 
 .footnote[
 
-[1]*R. Costanza,et al. Changes in the global value of ecosystem services. Global Environmental Change.(2014)*
+[1]*R. Costanza,et al. Changes in the global value of ecosystem services. Global Environmental Change(2014)*
 
-[2] *Pimentel et al. Economic and environmental benefits of biodiversity. BioScience. 1997.*;*Lautenbach et al. Spatial and Temporal Trends of Global Pollination Benefit. en. PLoS ONE. 2012.*; *Naranjo et al. Economic Value of Biological Control in Integrated Pest Management of Managed Plant Systems. Annual Review of Entomology. 2015.* 
+[2] *Pimentel et al. Economic and environmental benefits of biodiversity. BioScience (1997).*;*Lautenbach et al. Spatial and Temporal Trends of Global Pollination Benefit. en. PLoS ONE (2012).*; *Naranjo et al. Economic Value of Biological Control in Integrated Pest Management of Managed Plant Systems. Annual Review of Entomology (2015).* 
 
 ]
+
+
+???
+
+- Esses benefícios já foram estimados, no ano de 2011, em 125 trillhões de dolares anuais;
+
+- A perda desses serviços pela degradação causada por mudanças no uso da terra é estimada em 4-20 trilhões/ano
+
+- Para colocar isso em contexto, o PIB global em 2011 era de 68 trilhões;
+
+- Indo para uma escala mais fina, o controle natural de pragas e a polinização são estimadas em 10-1500 dolares/ha;
+
+
 
 ---
 
@@ -135,49 +181,77 @@ governanca
 
 ???
 
-Esta situação cria um paradoxo uma vez que o impacto da agricultura convencional sobre os ecossistemas compromete a própria agricultura e a manutenção de serviços ecossistêmicos vitais ao bem-estar humano (FOLEY, 2005; (PROGRAM), 2005). De fato, mesmo cultivos manejados de forma intensiva também
-dependem, em maior ou menor grau, de serviços de regulação e provisão (BOMMARCO; KLEIJN; POTTS, 2013). Por exemplo, estima-se que os serviços de controle natural de pragas e polinização providos por áreas naturais (DAINESE et al., 2019; TAMBURINI et al., 2020)tenham uma contribuição entre 10-1500 dólares por hectare globalmente (PIMENTEL et al., 1997; LAUTENBACH et al., 2012; NARANJO; ELLSWORTH; FRISVOLD, 2015). Entretanto, esses serviços são prejudicados pela intensificação agrícola (GEIGER et al., 2010).
+- a agricultura é o principal vetor de conversão de ambientes naturais e ocupa hj 30-40% da superficie terrestre. Praticamente toda área não coberta por gelo ou desertos;
 
 
 ---
 
 # Intensificação ecológica da agricultura
 
-- favorecimento dos organismos provedores de serviços ecossistêmicos que contribuem para a agricultura;
+.pull-left[
 
-- manutenção de vegetação nativa;
+### favorecimento dos organismos provedores de serviços ecossistêmicos;
 
--  ações de restauração de áreas naturais ou seminaturais;
+   - manutenção de vegetação nativa;
 
-- Adoção de boas práticas (ex. certificação agrícola)
+   - ações de restauração;
 
-- Os benefícios podem ser substanciais, como é o caso da produção de café.
+   - adoção de boas práticas (ex. certificação agrícola)
 
-  - Diversos estudos têm demonstrado a importância da cobertura
-de vegetação na paisagem e da proximidade das plantações com áreas naturais
-na modulação do fluxo de organismos provedores de serviços, os quais podem
-aumentar a produtividade entre 10 – 30% (citar trabalhos do laboratório)
+- Os benefícios podem ser substanciais:
 
-  - Além disso, florestas tropicais restauradas tem o potencial de retirar em média 3,05 toneladas de carbono ha–1 ano–1 da atmosfera nos primeiros 20 anos
+  - **Produtividade café pode aumentar 10 – 30%** (Projeto Interface)
 
-**arrumar esse slide, pra diminuir texto!**
+  - florestas tropicais restauradas podem retirar ~3 ton de carbono `\(ha^{–1}\)` `\(ano^{–1}\)` da atmosfera nos primeiros 20 anos;
 
+]
+
+.pull-right[
+
+&lt;img src="figures/coffee.jpg" width="80%" style="display: block; margin: auto;" /&gt;
+
+
+]
+
+???
+
+- dada a situação posta, existe um desafio que a gente precisa enfrentar: como produzir de forma mais sustentável;
+
+- A gente precisa de uma intensificação ecológica da agriculutra: ou seja, favorecer os organimos que provêem os SE.
+
+- Ações como  
+   - a manutenção de áreas de vegetação nativa;
+   - restaurar áreas degradadas em paisagens agrícolas;
+   - Adoção de boas práticas agrícolas, o que é cobrado por ex nos produtos agrícolas certificados -- vou falar mais pra frente sobre isso.
+   
+- Os benefícios dessas práticas podem ser importantes!
+
+- Pro café por ex, os dados do Projeto em que meu doutorado está inserido, obtido por colegas mostram um aumento de produtividade entre 10-30% com a polinização.
+
+- Na foto a gente vê uma abelha nativa polinizando uma flor de café, que depois vai gerar os frutos.
+
+- Além disso, restaurar florestas em áreas agrícolas retira até 3 toneladas carbono da atmosfera por ha, reduzindo os efeitos do aquecimento global;
 ---
 
 # Políticas de conservação
 
 &lt;img src="figures/mapGaribaldi.png" width="100%" style="display: block; margin: auto;" /&gt;
 
-
+.footnote[
+*Garibaldi et al. Working landscapes need at least 20% native habitat. Conservation Letters (2020).*
+]
 
 ???
 
-uma série de politicas para conservação e restauração em propriedades privadas foi criada, de modo voluntário ou obrigatório (GARIBALDI; PÉREZ-MÉNDEZ et al., 2019).
+- Já existem algumas politicas para conservação e restauração em áreas agrícolas, de modo voluntário ou obrigatório (GARIBALDI; PÉREZ-MÉNDEZ et al., 2019).
 
 
-.footnote[
-*Garibaldi et al. Working landscapes need at least 20% native habitat. Conservation Letters.2020.*
-]
+- Por ex, na Europa existe um mínimo de 5% de areas naturais ou semi q devem ser mantidas. 
+
+- Alguns paises tb protegem florestas.
+
+- Nessa figura, o Brasil se destaca como um dos poucos a tentar garantir ao menos 20% de áreas nativas em paisagens agrícolas, o que a ciência já demonstrou ser fundamental pra manter os organísmos que provem os serviços ecossistêmicos;
+
 
 ---
 
@@ -192,7 +266,19 @@ uma série de politicas para conservação e restauração em propriedades priva
 
 ???
 
-explicar rapidamente sobre o cf, compensação etc e contextualizar a problemática de restaurar e aderir a certificação! pra apresentar os objetivos!
+A lei que regulamenta a proteção da vegetação no Brasil foi lançada na versão mais atual em 2012;
+
+- Existem duas formas de proteção:
+
+ - as áreas de proteção permanente, que são áreas sensíveis como topos de morro e beiras de rios;
+ 
+ - as reservas legais, que são uma parcela da propriedade que deve ser protegida;
+ 
+A soma de APP + RL deve ser equivalente a 20% da propriedade na maioria do território, com exceção da Amazônia.
+
+As APP tem que ser necessariamente recuperadas pra propriedades médias e grandes. 
+
+No caso das RL, elas podem ser recuperadas -- caso a propriedade tenha menos de 20% de cobertura -- ou uma área equivalente pode ser compensada fora da propriedade.
 
 
 ---
@@ -209,6 +295,21 @@ explicar rapidamente sobre o cf, compensação etc e contextualizar a problemát
 --
   
   -  avaliação rigorosa da efetividade de ações de certificação;
+
+???
+
+Eu usei essa introdução pra justificar o objetivo geral da minha tese: LER
+
+Trabalhei com 2 politicas exsitentes q vao nessa direção:
+
+- a lei de proteção da veg. nativa e como ter um planejamento adequado dela
+
+- pratica voluntária de adoção de certificação e os efeitos dessa pratica
+
+
+Com esse objetivo geral, a gente definiu alguns objetivos específicos:
+  
+
 --
 
 ## Objetivos específicos
@@ -222,15 +323,27 @@ explicar rapidamente sobre o cf, compensação etc e contextualizar a problemát
 
 ### A certificação agrícola tem efeitos quantificáveis para a conservação?
 
+
+
 ---
 
-class: inverse
+class: inverse,  middle, center
 
 # Capitulo 2
-## Private reserves suffers from the same location biases of public protected areas
-### Francisco d’Albertas, Adrian González-Chaves, Clarice Borges-Matosa, Vitor Zago de Almeida Paciello, Martine Maron, Jean Paul Metzger
 
-#### Publicado como:
+### Private reserves suffers from the same location biases of public protected areas
+
+&lt;br&gt;
+
+#### Francisco d’Albertas, Adrian González-Chaves, Clarice Borges-Matosa, Vitor Zago de Almeida Paciello, Martine Maron, Jean Paul Metzger
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+##### Publicado como:
 ##### d’ALBERTAS, F. et al. Private reserves suffer from the same location biases of public protected areas. Biological Conservation, v. 261, p. 109283, 1 set. 2021. 10.1016/j.biocon.2021.109283
 
 ---
@@ -242,14 +355,15 @@ class: inverse
 
 .footnote[
 *UNEP-WCMC IUCN, NGS. Protected Planet Report. Cambridge UK; Gland,
-Switzerland; e Washington, D.C., USA., 2018.*]
+Switzerland; e Washington, D.C., USA (2018).*]
 
 ???
 
-retomar crise de biodiversidade
-politica importante: Criar areas protegidas!
+Como eu comentei, existe uma crise de perda de biodiversidade.
 
-pegar area do mundo que esta protegida!!
+Uma das maneiras de combater ela: Criar areas protegidas!
+
+e de fato houve uma expansão na rede de áreas protegidas terrestres e marinhas 
 
 ---
 
@@ -258,10 +372,25 @@ pegar area do mundo que esta protegida!!
 
 &lt;img src="figures/bias.png" width="65%" style="display: block; margin: auto;" /&gt;
 
-.footnote[*Venter et al. Bias in protected-area location and its effects on long-term aspirations of biodiversity conventions. Conservation Biology. 2018.
+.footnote[*Venter et al. Bias in protected-area location and its effects on long-term aspirations of biodiversity conventions. Conservation Biology (2018).
 *]
 
 ???
+
+É claro que isso tem uma importancia extrema.
+
+Mas quando a gente olha em detalhes, existem alguns problemas
+
+Aqui eu separei um detalhe ndos Estados unidos mostrando que existe claramente uma preferencia em criar essas áreas longe de locais de alto valor agrícola.
+
+E isso mtas vezes desconsidera a importancia biológica, pra conservação dessas áreas, por ex.
+
+
+E esse fenomeno acontece com mta frequencia.
+
+isso dificulta mto por ex. que essas áreas beneficiem por ex a agricultura
+
+Alem disso, mtas regiões ficam super depauperadas de natureza.
 
 ---
 
@@ -272,15 +401,15 @@ E as terras privadas?
 
 &lt;img src="figures/MapChart_Map.png" width="50%" style="display: block; margin: auto;" /&gt;
 
-.footnote[*SASS et al. Forest ownership in the conterminous United States circa 2017: distribution of eight ownership types - geospatial dataset. 2017*; *PULLA et al. Mapping the distribution of forest ownership in Europe.2013*; *FREITAS et al. Potential increase of legal deforestation in Brazilian Amazon after Forest Act revision. Nature Sustainability. 2018*]
+.footnote[*SASS et al. Forest ownership in the conterminous United States circa 2017: distribution of eight ownership types - geospatial dataset. 2017*; *PULLA et al. Mapping the distribution of forest ownership in Europe.2013*; *FREITAS et al. Potential increase of legal deforestation in Brazilian Amazon after Forest Act revision. Nature Sustainability (2018)*]
 
 ???
 
-One way to reduce bias is to increase protected areas on private land (CORTÉS
-CAPANO et al., 2019; DRESCHER; BRENNER, 2018). Agriculture cover &gt;
-30% of the Earth’s ice-free surface (ELLIS et al., 2010), mostly on private property.
 
-In turn, private properties shelter vasts amounts of native vegetation, for instance, 56% of the United States forests (SASS; BUTLER; MARKOWSKI-LINDSAY, 2017), 28% of Europe’s forests (PULLA et al., 2013) and 53% of the native vegetation in Brazil (FREITAS; ENGLUND et al., 2017).
+Uma forma de reduzir esse vies, é focar tb na proteção dentro de propriedades privadas.
+
+
+Pegando o exemplo de alguns locais, as propriedades privadas -- le-se principalmente fazendas -- tem uma qntidade razoavel de vegetação (ler ex.)
 
 ---
 background-image: url("figures/floresta_cut.jpg")
@@ -292,11 +421,12 @@ background-size: contain
 
 - No Brasil, o código florestal é fundamental para a manutenção da vegetação nativa.
 
-- São 167 milhões de ha como RL
+- São 167 milhões de ha como RL protegidas;
 
-- Their location should be adequately planned to support species survival in fragmented landscape  while favoring ecosystem services that can increase agricultural productivity
+- Passivo de 20 milhões ha;
 
-**adequar isso!**
+- A localização das novas áreas é uma oportunidade;
+
 
 ]
 
@@ -304,39 +434,34 @@ background-size: contain
 
 ???
 
-Voltando ao caso Brasileiro
+Voltando ao caso Brasileiro, a lei é fundamental pra manutenção da veg. nativa. Quase metade dos remanescentes são protegidos por ela.
 
-At present, Legal Reserves cover 167 million ha (METZGER; BUSTAMANTE et al., 2019), representing nearly half of the remaining native vegetation areas in
-Brazil (SOARES-FILHO et al., 2014)
-
-To achieve the objectives of Legal Reserves, their location should be adequately planned to support species survival in fragmented landscape  while favoring ecosystem services that can increase agricultural productivity.
+Além disso, a recuperação desse passivo permitira um planejamento adequado pra diminuir o risco de estinções de spp em paisagens degradadas, e ainda permiritia aumentar a provisão de SE.
 
 ---
 
 # Perguntas
 
+???
+
+Nesse capítulo, a gente buscou responder essas 2 perguntas.
+
+- a gente esperava que as decisoes de manejo da terra fossem tomadas para maximizar os ganhos das propriedades, ou seja, seguindo uma lógica econômica e priorizando a produção, oq é uma premissa razoável.
+
+
 --
 
-1. Which drivers predict the proportion of Legal Reserves the landowners declare inside their properties versus outside their land?
+1. Quais fatores predizem a proporção de RL declarada?
 
 --
 
-1. For landowners that decided to allocate Legal Reserves inside their properties, which drivers can predict where those Legal Reserves are located? Following the pattern already described for public protected areas
+1. Quais fatores predizem a localização dessas RL declaradas?
+
 
 &lt;img src="figures/lampada.jpg" width="20%" style="display: block; margin: auto;" /&gt;
 
 
-???
 
-- we use CAR data to shed light on which drivers affect farmer’s decisions about the amount and spatial location of Legal Reserves within their properties
-and consider the implications of their choices for biodiversity conservation and ecosystem services provision.
-
-- we expected that land management decisions concerning Legal Reserves are made to maximize farm income. Farms located in marginal areas for agriculture production or less profitable were thus expected to set aside larger proportions of Legal Reserves inside their properties.
-
-- We also expected that larger properties will declare higher proportions of Legal Reserves on-property. Considering the same reasoning, we also expected landowners will tend to locate their Legal Reserves within marginal lands. 
-
-
-- Additionally, we evaluated whether farmers are choosing to allocate Legal Reserves near existing native vegetation patches, which would increase patch size and could contribute to biodiversity conservation and ecosystem services provision.
 
 ---
 
@@ -348,19 +473,23 @@ and consider the implications of their choices for biodiversity conservation and
 
 ???
 
-- our sample included 164 municipalities of southeastern Brazil, in one of the most important and traditional regions for coffee production (Figure
-2). This region was predominantly covered by the Atlantic Rainforest, a highly
-biodiverse tropical forest, which suffered a long history of deforestation and fragmentation (JOLY; METZGER; TABARELLI, 2014). Yet, despite past human interference, the Atlantic Forest still shelter a highly diverse set of tropical species (MITTERMEIER et al., 2011). For that reason, conservation policies to protect the remaining vegetation are fundamental to prevent further biodiversity losses
+Pra responder essas perguntas a gente usou dados de 3622 propriedades espalhadas em 164 municipios entre o Sul de Minas e SP.
 
-- Several studies have demonstrated the importance of Atlantic Forest remnants in providing key ecosystem services for coffee production, such as in modulating the flows of pollinators [Saturni, Jaffé e Metzger (2016);gonzalez-chaves_forest_2020] or natural enemies of coffee pests (ARISTIZÁBAL; METZGER, 2019; LIBRÁN-EMBID; DE COSTER; METZGER, 2017).
+Essa é uma região bem tradicional pra produção de café e foi escolhida justamente por isso. Apesar da questão do café não ser relevante aqui, ela vai ser super importante nos outros capítulos.
 
-- To understand what drivers influenced Legal Reserve location in-farm
-(Question 2) we considered only the 2,960 properties that have declared at least some extent of Legal Reserve in-farm
-
+- Essa área era predominante coberta pela Mata Atlantica
 
 ---
 
 background-image: url("figures/coffeeBR.jfif")
+
+
+--
+
+
+??? a paisagem dessa região tem essa cara. Um relevo montanhoso, com remanescentes de mata nos topos de morros e plantações de café ocupando as encostas.
+
+
 
 ---
 # Métodos
@@ -372,24 +501,70 @@ background-image: url("figures/coffeeBR.jfif")
 .pull-right[
 &lt;img src="figures/box1_2.jpg" width="100%" style="display: block; margin: auto;" /&gt;
 ]
-
 ---
+
 # Métodos
 ### Análise dos dados
 
-
-aqui vale criar as abas!!
-
+Modelos hierárquicos com distribuição binomial de probabilidades
 
 
 
-$$ Proporção RL \sim variaveis \ independentes $$
+ .panelset[
+   .panel[.panel-name[Pergunta 1]
+   
+   
+
+   $$ Proporção \ RL \sim variaveis \ independentes $$
+&lt;img src="figures/cat_RL.png" width="446" style="display: block; margin: auto;" /&gt;
+   
+&lt;img src="figures/donut_box2.png" width="20%" style="display: block; margin: auto;" /&gt;
+     
+   
+   
+   ]
+
+   .panel[.panel-name[Pergunta 2]
+
+$$ Tipo \ de \ uso  \sim variaveis \ independentes $$
+&lt;img src="figures/box1_1.jpg" width="40%" style="display: block; margin: auto;" /&gt;
 
 
-- drivers que a gente mediu
+
+   ]
+   
+   .panel[.panel-name[variáveis independentes]
 
 
+&lt;style type="text/css"&gt;
+    /* Table width = 100% max-width */
 
+    .remark-slide table{
+        width: 100%;
+    }
+
+    /* Change the background color to white for shaded rows (even rows) */
+
+    .remark-slide thead, .remark-slide tr:nth-child(2n) {
+        background-color: white;
+    }
+&lt;/style&gt;
+
+.scroll-box-10[
+
+<div id="htmlwidget-595b95b0cf53bb702653" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-595b95b0cf53bb702653">{"x":{"filter":"none","data":[["Aptidão agrícola","Diversidade usos solo","Irrigação","Custo de oportunidade","Tamanho da propriedade","Proporção vegetação","Proporção de pastagem","Proporção de APP","Custo de transporte","Distância APPs","Distancia vegetação"],["1,2","1","1","1,2","1","1","1","1","1,2","2","2"]],"container":"<table class=\"compact\">\n  <thead>\n    <tr>\n      <th>Variável<\/th>\n      <th>Pergunta<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"tBp","pageLength":8,"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[8,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+]
+   
+   
+   
+   
+   ]
+   
+   ]
+   
+   
+  
 ???
 
 Voltando ao caso Brasileiro
@@ -400,34 +575,507 @@ Brazil (SOARES-FILHO et al., 2014)
 To achieve the objectives of Legal Reserves, their location should be adequately planned to support species survival in fragmented landscape  while favoring ecosystem services that can increase agricultural productivity.
 
 ---
-
-# Métodos
-### Análise dos dados
-
-Modelos hierarquicos com distribuição binomial de probabilidades 
-
+# Resultados e Discussão
 
 
  .panelset[
-   .panel[.panel-name[Pergunta 1]
-   
-   
+   .panel[.panel-name[Tamanho de efeito]
 
-   $$ Proporção \ RL \sim variaveis \ independentes $$
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="figures/fig3_cap1.jpg" alt="Proporção de RL" width="60%" /&gt;
+&lt;p class="caption"&gt;Proporção de RL&lt;/p&gt;
+&lt;/div&gt;
+   
+&lt;div class="figure" style="text-align: center"&gt;
+&lt;img src="figures/fig4_cap1.jpg" alt="Localização RL" width="60%" /&gt;
+&lt;p class="caption"&gt;Localização RL&lt;/p&gt;
+&lt;/div&gt;
+     
+   
    
    ]
 
-   .panel[.panel-name[Pergunta 2]
+   .panel[.panel-name[Representação gráfica]
 
-   Take a look at the R code in that other panel.
+&lt;img src="figures/graphical_abstract_v07-02.png" width="95%" style="display: block; margin: auto;" /&gt;
+
+
+
    ]
    
-   .panel[.panel-name[variáveis independentes]
+]
 
-   Take a look at the R code in that other panel.
-   ]
+???
+
+- The major drivers influencing Legal Reserve allocation are vegetation infarm,
+property size, transportation costs, and agricultural suitability. 
+
+- Landownders with larger properties that have lower agricultural suitability, higher transportation costs and more vegetation in farm are more likely to invest in Legal reserves. 
+
+- This suggests that economic processes are the primary driver determining landowner
+decisions around investment in Legal Reserves.
+
+- We also show that farmers owning properties with low vegetation cover are unlikely to invest in in-farm restoration to achieve Legal Reserve compliance, instead opting for compensation schemes such as purchase credits to compensate their vegetation deficit on other properties. 
+
+- Decisions based on these criteria will result in the concentration of Legal Reserves and native vegetation in private properties of lower agricultural value in the future, while leaving a large number of properties with few areas of forest under protection.
+
+- This replicates biases in the spatial distribution of public protected areas
+
+
+- Especificar que intervençoes poderiam ser necessarias pra melhorar isso!
+
+Pastagm: 
+
+- Isso eh interessante pq se fala mto em priorizar restauração em larga escala em áreas de pastagem, mas pode haver resistência por parte dos proprietários;
+
+
+---
+
+background-image: url("figures/fundo_slide_conclusaorl.jpg")
+background-size: contain
+
+# Resultados e Discussão
+
+### Garantir o papel das RL:
    
-   ]
+
+- regular e executar a legislação;
+  
+
+   
+- planejamento espacial da alocação de RL;
+
+
+   
+- políticas de intentivo a restauração de RL (ex. PSA)
+  
+  
+   
+- atividades econômicas dentro de RLs;
+  
+ 
+   
+- incentivos de mercado;
+   
+
+???
+
+destacar resultados q mais chamam atenção!
+
+
+Vies:
+
+- this bias disregards the local and regional importance of forest patches for biodiversity conservation and ecosystem service provision and the benefits that come from restoration in high priority degraded areas;
+
+- The uneven distribution of protected forests in private land will have a direct
+impact on biodiversity conservation. Tropical priority areas for biodiversity conservation often have unfavorable economic conditions for restoration;
+
+- monocultures within landscapes with low vegetation cover have a deficit in ecosystem services provision (DAINESE et al., 2019), which can negatively impact yields through dilution effects;
+
+- Impacto sobre os potenciais beneficios: This suggests that trend for low-vegetatation areas to become less vegetated into the future could carry significant yield penalties, that could be even further exacerbated by climate change;
+
+- Unfortunately, while there is a clear incentive to join the CAR system, the
+economic incentive of complying with the legislation and in particular to invest in
+restoration is low (AZEVEDO et al., 2017). As a consequence, the existing uneven
+pattern of native vegetation distribution tends to be maintained
+
+
+ completar!!
+
+---
+
+class: inverse,  middle, center
+
+# Capitulo 3
+
+### When do benefits from ecosystem restoration offset costs?
+
+&lt;br&gt;
+
+#### Francisco d’Albertas, Gerd Sparovek, Luis Fernando Guedes Pinto, Camila Hohlenwerger, Jean Paul Metzger
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+
+---
+
+# Introdução
+
+&lt;img src="figures/bending_curve.jpg" width="75%" style="display: block; margin: auto;" /&gt;
+
+
+.footnote[
+*Leclère, et al. Bending the curve of terrestrial biodiversity needs an integrated strategy. Nature (2020).
+.*
+]
+
+???
+
+Ja falei dos problemas de ameaça a biodiversidade 
+
+E tb da importância da restauração, inclsusive em propriedades privadas!
+
+
+pra reverter a perda de biodiv. e serviços,  precisamos adotar uma trajetória de recuperação
+
+---
+background-image: url("figures/restoration_decade.jpg")
+background-size: contain
+
+
+# Introdução
+
+.pull-right[
+
+&lt;img src="figures/UNLOGO.jpg" width="90%" style="display: block; margin: auto 0 auto auto;" /&gt;
+
+&lt;br&gt;
+
+## restauar 350 Mha de areas degradadas até 2030 
+
+]
+
+???
+
+However, these actions face important difficulties to be implemented given the high
+costs involved. These include direct restoration costs, fencing and opportunity cost
+of forgone production. Recent work has highlighted that these costs can act as
+a major financial barrier to the wide-scale adoption of restoration
+
+---
+
+background-image: url("figures/contraste_paisagens.jpg")
+background-size: contain
+
+# Introdução
+
+???
+
+alem dos custos, a restauracao pode trazer uma serie de benefícios, como eu ja falei na introdução;
+
+---
+
+# Perguntas
+
+
+1. Can restoration results in financial benefits and in which conditions benefits might overcome intervention costs?
+
+1. How net restoration costs can be compared with overall profitability of farms and carbon prices?
+
+&lt;img src="figures/lampada.jpg" width="20%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Métodos
+## Área de estudo
+
+&lt;img src="figures/studysite_compl.jpeg" width="50%" style="display: block; margin: auto;" /&gt;
+
+---
+# Métodos
+
+
+ .panelset[
+   .panel[.panel-name[cenários]
+   
+
+&lt;img src="figures/Cenarios.jpg" width="100%" style="display: block; margin: auto;" /&gt;
+
+]
+
+
+   .panel[.panel-name[Farm-level vs. Regional-level]
+   
+
+.pull-left[
+
+
+### farm-level (fl)
+&lt;img src="figures/fl.gif" width="80%" /&gt;
+]
+
+.pull-right[
+
+### regional-level (rl)
+
+&lt;img src="figures/rl.gif" width="80%" /&gt;
+]
+
+]
+
+]
+
+---
+
+# Métodos
+## Variáveis medidas nos cenários
+
+&lt;img src="figures/variaveis_cenarios.jpg" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Resultados e Discussão
+
+&lt;img src="figures/cashflow_panel_withveg7.jpeg" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Resultados e Discussão
+
+&lt;img src="figures/carbon.jpeg" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+# Resultados e Discussão
+
+- Forest restoration costs can be offset by yield and production increases. This was true when farms had &gt;10% forest cover at the baseline and forest cover was up to 25% by the end;
+
+- Farmers who had historically deforested less had a net financial benefit;
+
+- There is a clear threshold around 25% forest cover above which additional restoration substantially increases costs;
+
+- `\(CO_2\)` prices are not enough to offset costs. Values would have to be substantially higher
+
+---
+
+class: inverse,  middle, center
+
+# Capitulo 4
+
+### Agricultural certification as a complementary tool for environmental law compliance
+
+&lt;br&gt;
+
+#### Francisco d’Albertas, Patricia Ruggiero, Luís Fernando Guedes Pinto, Gerd Sparovek, Jean Paul Metzger
+
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+---
+
+background-image: url("figures/agri_cert.jpg")
+background-size: contain
+
+# Introdução
+
+.pull-left[
+
+### Certificação
+
+- boas práticas (socioambientais, econômicas);
+
+- adesão voluntária;
+
+- acesso a novos mercados;
+
+- impactos mensuráveis;
+
+
+
+
+]
+
+
+???
+
+Agricultural sustainable standards are an important non-state governance intervention to reduce commodities pressures on biodiversity (LENZEN et al., 2012).
+
+In a certification process, a set of criteria of best practices on economic, social, and environmental aspects are defined and used to monitor and certify farmers (LAMBIN; THORLAKSON, 2018). The label gives farmers access to a market of consumers willing to pay a higher price for prime products (FERRARO; UCHIDA;
+CONRAD, 2005). Often, this translates into economic gains for farmers and positive social and, potentially, environmental outcomes (MEEMKEN et al., 2021; OYA; SCHAEFER; SKALIDOU, 2018). Despite this, conservation benefits derived from certification are less clear (BLACKMAN; RIVERA, 2011; MEEMKEN et al., 2021).
+Even though evidence on the positive biodiversity conservation impact of certification has been advocated [e.g. Haggar et al. (2015); hardt_does_2015 ], there is still uncertainty of whether or not observed differences can be attributed to sustainable standards or if some pre-existing conditions are impacting the results (MEEMKEN
+et al., 2021)
+
+---
+
+# Introdução
+
+&lt;img src="figures/certification_map.jpg" width="100%" style="display: block; margin: auto;" /&gt;
+
+.footnote[
+*Tayleur et al. Where are commodity crops certified, and what does it mean for conservation and poverty alleviation? Biological Conservation (2018).*]
+
+---
+
+# Introdução
+
+&lt;img src="figures/data_certificacao.png" width="50%" style="display: block; margin: auto;" /&gt;
+
+.footnote[*Meemken et al. Sustainability standards in global agrifood supply chains. Nature Food(2021*).]
+
+???
+
+---
+
+# Perguntas
+
+
+A certificação tem um efeito detectável:
+
+   1. na taxa de desmatamento?
+   1. na taxa de regeneração ?
+   1. na proporção de cobertura?
+   1. na proporção de cobertura das APPs? 
+
+repensar, talves deixar só uso e cobertura do solo!!
+
+&lt;img src="figures/lampada.jpg" width="20%" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+# Métodos
+
+&lt;img src="figures/study_site2.jpg" width="85%" style="display: block; margin: auto;" /&gt;
+
+???
+
+Muncipios no Cerrado e na Mata Atlantica, com certificação da RA
+
+Eu cruzei os dados do Car pros municipios certificados e tb selecionei todas as propriedades desses municipios como controle
+
+---
+
+# Métodos
+
+ .panelset[
+   .panel[.panel-name[Matching]
+
+&lt;img src="figures/matching.png" width="55%" style="display: block; margin: auto;" /&gt;
+   
+
+
+]
+
+
+   .panel[.panel-name[Resultado do pareamento]
+   
+.pull-left[
+&lt;img src="figures/sup_smd_ma.jpeg" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+.pull-right[
+&lt;img src="figures/sup_smd_ce.jpeg" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+]
+
+]
+
+---
+
+# Métodos
+## Impacto da certificação
+
+**Diferença-das-diferenças (did)** com `\(t_0\)` variando:
+
+$$ variáveis \ dependentes \sim variáveis \ independentes $$
+.pull-left[
+
+### Variáveis dependentes
+
+- taxa de desmatamento;
+
+- taxa de regeneração;
+
+- déficit de cobertura;
+
+- proporção de cobertura APPs;
+
+
+]
+
+.pull-right[
+
+### Variáveis independentes
+
+- tratamento;
+- tempo;
+- data de início da certificação ( `\(t_0\)` );
+
+]
+
+---
+
+# Resultados
+
+ .panelset[
+   .panel[.panel-name[Mata Atlântica]
+
+&lt;img src="figures/panel_regression_results_ma_deficit.jpeg" width="50%" style="display: block; margin: auto;" /&gt;
+   
+
+
+]
+
+
+   .panel[.panel-name[Cerrado]
+   
+&lt;img src="figures/panel_regression_results_ce_deficit.jpeg" width="50%" style="display: block; margin: auto;" /&gt;
+
+
+]
+
+]
+
+---
+# Resultados
+## Mata Atlântica
+
+Efeito de antecipação
+
+
+&lt;img src="figures/temp_leg.jpg" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Resultados e Discussão
+
+- Fazendas certificadas restauram mais suas APPs (sinergia entre legislação e mecanísmos voluntários);
+
+- Para outras variáveis, falta de efeito se relaciona `a características regionais;
+
+- Ausência de efeito no Cerrado também;
+
+- Efeitos mais intensos poderiam se verificar em regiões onde a certificação ainda não alcança;
+
+- Mesmo em regiões consolidadas, ainda há espaço para aumentar adicionalidade;
+
+
+???
+
+- we did find a trend suggesting that certified farms are restoring more of their
+areas of permanent protection (APP) than non-certified farms, which indicates a
+potential synergy between law enforcement of the Natural Vegetation Protection
+Law and voluntary mechanisms, such as agricultural certification;
+
+- This lack of effect can be partially explained by the environmental conditions
+of the study region;
+
+- the area holds characteristics often recognized as attractive for certification programs, such as a well-established supply chain, high agricultural suitability, and relatively low environmental and social risks, in a middle-income developing country;
+
+- falta de dif. no cerrado:
+   - proportion of APPs covered with vegetation was considerably higher for properties at this biome;
+   - Secondly, properties at the Cerrado have more regular terrain;
+   - municipalities in the Atlantic Forest are not only subjected to more strict environmental legislation, but they also possibly face more rigorous environmental surveillance due to higher environmental police contingents and higher civil society awareness in the region. Also, in relation to the Cerrado, the Atlantic Forest has a longer and wider experience on restoration projects that includes knowledge accumulation through scientific and technical research;
+   - Disproportional benefits from certification could be achieved in places with
+weaker governance, such as agricultural frontiers or low-income countries;
+   - there is still room to increase its positive environmental impact in consolidated agricultural landscapes, as we have shown in this study. In this case, certification agencies could take advantage of local environmental legislation compliance, identifying the weaknesses and difficulties of its implementation by landowners, and facilitating its compliance.
+   - By increasing farm profit, certification schemes can at least partially account for the social costs of changes, and thus promote vegetation conservation in agricultural
+landscapes;
+   - certifiers could stimulate within farm restoration. However, while there can be benefits on the long run, the costs at the short term are substantial. To attenuate the costs, market mechanism such as payment for ecosystem services have already been used in the Atlantic Forest to stimulate restoration (RUGGIERO et al., 2019) and could be an option, combined with complementary policies such as subsidies and technical assistance;
+
+---
+
+# Conclusão geral
+
+
+
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
