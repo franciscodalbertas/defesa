@@ -166,9 +166,9 @@ knitr::include_graphics("figures/ecosystem-services-diagram.jpg")
 
 # Beneficios da natureza para as pessoas (SE)
 
-- Constanza et al. (2014) $^1$ estimate for the total global ecosystem services in 2011 is **USD 125 trillion/yr**;
+- Constanza et al. (2014) $^1$ estimaram  a contribuição total SE em  **USD 125 trilhões/ano**;
 
-- the loss of eco-services from 1997 to 2011 due to land use change is estimated at **$4.3–20.2 trillion/yr**;
+- a perda de SE entre 1997-2011 devido a mudanças no uso da terra foi estimada em **$4.3–20.2 trilhões/ano**;
 
 - PIB global em 2011: **USD 68 trilhões**
 
@@ -1544,13 +1544,17 @@ knitr::include_graphics("figures/end.jpg")
 
 ???
 
-- agricultura convencional em escala industrial, focada largamente na produção de “commodities”, é um dos grandes motores da rápida degradação ambiental que testemunhamos;
+# Geral
+
+- agricultura convencional em escala industrial: grandes motores da rápida degradação ambiental;
 
 - Este é um setor que deverá ser profundamente transformado. 
 
 - Porém, executar essas mudanças é um grande desafio e passará necessariamente por ferramentas de governança de cunho público e privado, que sejam capazes de conciliar os interesses econômicos dos setores produtivos envolvidos, a capacidade de prover alimentos e a manutenção e recuperação da biodiversidade em paisagens agrícolas;
 
-- O Brasil, em particular, é reconhecido como um dos grandes celeiros do mundo e dedica uma área considerável do território à produção de “commodities”. É também um dos países mais biodiversos. Além disso, o Brasil possui uma legislação ambiental bastante complexa (porém com uma baixa capacidade do Estado em executá-la), bem como muitas iniciativas de produção agrícola mais sustentável, como é o caso das certificações agrícolas. Dessa forma, o Brasil oferece uma oportunidade única de testar e aprimorar uma série de políticas direcionadas a uma produção mais sustentável, que pode servir de modelo para outras regiões;
+- O Brasil, em particular, é reconhecido como um dos grandes celeiros do mundo e dedica uma área considerável do território à produção de “commodities”. É também um dos países mais biodiversos. Além disso, o Brasil possui uma legislação ambiental bastante complexa (porém com uma baixa capacidade do Estado em executá-la), bem como muitas iniciativas de produção agrícola mais sustentável, como é o caso das certificações agrícolas. 
+
+- Dessa forma, o Brasil oferece uma oportunidade única de testar e aprimorar uma série de políticas direcionadas a uma produção mais sustentável, que pode servir de modelo para outras regiões;
 
 
 - abordamos importantes questões permeando ferramentas de governança relacionadas ao uso da terra e à conservação da biodiversidade em paisagens agrícolas. Nossos resultados contribuem para uma melhor compreensão da adesão e impactos da legislação ambiental no Brasil e dos efeitos da certificação agrícola como uma ação complementar não-governamental às políticas ambientais;
@@ -1559,17 +1563,19 @@ knitr::include_graphics("figures/end.jpg")
 
 - decisões de proprietários  são tomadas de modo a maximizar a renda da propriedade e reduzir os custos com restauração. 
 
-- Desse modo, sem ações específicas de incentivo para a adoção dessas áreas de “reserva”, a distribuição de vegetação nativa em áreas privadas será similar a de áreas protegidas públicas;
+- Sem ações específicas de incentivo para a adoção dessas áreas de “reserva”, a distribuição de vegetação nativa em áreas privadas será similar a de áreas protegidas públicas;
 
 # capitulo 3:
+
 - a restauração de florestas dentro das propriedades não resulta necessariamente em perdas financeiras.
 
-- Dependendo da quantidade inicial de floresta na propriedade e da quantidade a
-ser restaurada, pode haver equilíbrio ou até ganho financeiro, por meio do aumento da provisão de serviços ecossistêmicos que elevam a produtividade agrícola
+- Dependendo da quantidade inicial de floresta na propriedade e da quantidade a ser restaurada, pode haver equilíbrio ou até ganho financeiro, por meio do aumento da provisão de SE; 
 
-- No entanto, os preços de C praticados teriam que ser mais altos que os atuais, para que sejam competitivos com outros usos da terra;
+- Preços de C praticados teriam que ser mais altos que os atuais, para que sejam competitivos com outros usos da terra;
 
-- Sugerimos, portanto, que é sim possível financeiramente aliar a manutenção ou aumento da produção agrícola com maior proteção da biodiversidade e sequestro de carbono da atmosfera, mitigando os efeitos das mudanças climáticas. Entretanto, também nesse caso são necessárias políticas complementares, como a regulamentação de um mercado de carbono e o financiamento das ações de restauração, de modo a torná-las mais atrativas para os proprietários de terras.
+- Sugerimosque é sim possível financeiramente aliar a manutenção ou aumento da produção agrícola com maior proteção da biodiversidade e sequestro de carbono da atmosfera, mitigando os efeitos das mudanças climáticas. 
+
+-Entretanto, também nesse caso são necessárias políticas complementares, como a regulamentação de um mercado de carbono e o financiamento das ações de restauração, de modo a torná-las mais atrativas;
 
 # capitulo 4:
 
@@ -1577,13 +1583,68 @@ ser restaurada, pode haver equilíbrio ou até ganho financeiro, por meio do aum
 
 - Aliada à regulamentação provida pela legislação ambiental, ela pode ser mais um instrumento que potencializa mudanças no campo. Assim, no capítulo 3, nos debruçamos sobre a efetividade da certificação do café em promover ganhos para a conservação.
 
-- Encontramos que a certificação de café em uma região de agricultura consolidada não teve um efeito detectável em reduzir o desmatamento ou em aumentar a taxa de regeneração de vegetação nativa. Entretanto, vimos que a certificação pode servir realmente como um estímulo adicional para o cumprimento da legislação ambiental. Em particular, a recuperação de áreas ambientalmente sensíveis, como topos de morro e áreas ripárias, foi maior nas propriedades certificadas quando comparadas com propriedades não certificadas da mesma região. Esses resultados sugerem que o impacto da certificação para a conservação pode ainda ser expandido, seja pela sua ampla adoção em áreas de fronteiras agrícolas (onde a pressão para conversão de usos da terra é maior), seja explorando mais sinergias da certificação com o cumprimento da legislação ambiental.
+- Encontramos que a certificação de café em uma região de agricultura consolidada não teve um efeito detectável em reduzir o desmatamento ou em aumentar a taxa de regeneração de vegetação nativa. 
+
+- Mas vimos que a certificação pode servir realmente como um estímulo adicional para o cumprimento da legislação ambiental. Em particular, a recuperação de áreas ambientalmente sensíveis, como topos de morro e áreas ripárias
+
+- Esses resultados sugerem que o impacto da certificação para a conservação pode ainda ser expandido, seja pela sua ampla adoção em áreas de fronteiras agrícolas (onde a pressão para conversão de usos da terra é maior), seja explorando mais sinergias da certificação com o cumprimento da legislação ambiental.
 
 
 ---
 
+count: false
 class: hide-count
 
 
 # Agradecimentos
 
+```{r echo=FALSE, fig.align='center',out.width="65%"}
+
+knitr::include_graphics("figures/Iinstituicoes.jpg")
+
+```
+
+
+```{r echo=FALSE, fig.align='center',out.width="65%"}
+
+knitr::include_graphics("figures/financiadores.jpg")
+
+```
+
+---
+
+count: false
+class: hide-count
+# Agradecimentos
+
+```{r echo=FALSE, fig.align='center', out.width="100%"}
+
+knitr::include_graphics("fotos/lepac.jpg")
+
+```
+
+---
+
+count: false
+class: hide-count
+
+# Agradecimentos
+
+```{r echo=FALSE, fig.align='center', out.width="90%"}
+
+knitr::include_graphics("fotos/coletanea.jpg")
+
+```
+
+---
+
+count: false
+class: hide-count
+
+# Agradecimentos
+
+```{r echo=FALSE, fig.align='center', out.width="90%"}
+
+knitr::include_graphics("fotos/fam.jpg")
+
+```
