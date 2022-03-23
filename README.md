@@ -2,8 +2,8 @@
 
 ### Pt-BR
 
-script usando **rmarkdonw** e **xaringan** pra montar minha defesa de doutorado.
+script usando **rmarkdonw**, **xaringan** e o pacote NHSRtheme(https://github.com/nhs-r-community/nhsrtheme#nhs-r-theme-) pra montar minha defesa de doutorado. Utitlizei o template 
 
 ### En
 
-scripts using **rmarkdonw** and **xaringan** to build slides for my thesis defense
+scripts using **rmarkdonw**, **xaringan** and the **NHSR** package to build slides for my thesis defense
