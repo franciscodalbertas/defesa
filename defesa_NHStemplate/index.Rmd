@@ -111,13 +111,11 @@ knitr::include_graphics("figures/earth.jpg")
 
 A maioria dos trabalhos de Ecologia começa com uma perspectiva sombria sobre o nosso planeta;
 
-- Eu resolvi seguir a mesma linha.
+- de fato existe uma crise de biodiversidade sem precedentes
 
-- crise de biodiversidade sem precedentes
+- mudanças climáticas são uma ameça
 
-- mudanças climáticas
-
-- poluição
+- poluição presente em todos os cantos
 
 
 ---
@@ -140,7 +138,7 @@ knitr::include_graphics("figures/ecosystem-services-diagram.jpg")
 
 ???
 
-- Ultrapassar esses limites implica em graves consequências para nós;
+- mas eu queria enfocar justamente nos benefícios da natureza;
 
 - A natureza provê benefícios fundamentais para nõs, que são conhecidos também como serviços ecossistêmicos;
 
@@ -219,9 +217,11 @@ knitr::include_graphics("figures/agriculture_surface.png")
 
 - a agricultura é o principal vetor de conversão de ambientes naturais e ocupa hj 30-40% da superficie terrestre. Praticamente toda área não coberta por gelo ou desertos;
 
+- por toda a extensão que ela ocupa, não da pra pensar em conservação sem tratar justamente da conservação em áreas agrícolas;
+
 ---
 
-```{r echo=FALSE, fig.align='center', out.width="75%"}
+```{r echo=FALSE, fig.align='center', out.width="85%"}
 
 knitr::include_graphics("figures/bending_curve.jpg")
 
@@ -283,7 +283,8 @@ knitr::include_graphics("figures/coffee.jpg")
 
 ???
 
-- existe uma demanda crescente por prod. agric. mas isso tem que ser feito sem os impactos da intensificacao concencional 
+
+-  demanda crescente por prod. agric. mas isso tem que ser feito sem os impactos da intensificacao concencional 
 
 
 - dada a situação posta, existe um desafio que a gente precisa enfrentar: como produzir de forma mais sustentável;
@@ -608,25 +609,14 @@ background-image: url("figures/coffeeBR.jfif")
 ---
 # Métodos
 
-.pull-left[
-```{r echo=FALSE, fig.align='center',out.width=800}
+
+```{r echo=FALSE, fig.align='center',out.width=1000}
 
 
-knitr::include_graphics("figures/box1_1.jpg")
-
-
-```
-]
-
-.pull-right[
-```{r echo=FALSE, fig.align='center',out.width=800}
-
-
-knitr::include_graphics("figures/box1_2.jpg")
+knitr::include_graphics("figures/box1_1_2.jpg")
 
 
 ```
-]
 
 
 ???
@@ -981,11 +971,17 @@ Esses custos variaram entre 120-40 dolares por tonelada, oq eh bastante mais doq
 ---
 # Resultados e Discussão
 
-- é possível compensar os custos de restauração com aumento de produtividade em algumas situações (propriedades com >10% vegetação e meta de até 25%);
+### 1. A restauração pode resultar em benefícios financeiros? quais situações?
+
+- é possível compensar os custos de restauração com aumento de produtividade em algumas situações (>10% vegetação e meta de até 25%);
 
 - Proprietários que historicamente desmataram menos tiveram um benefício;
 
 - Existe um limiar de 25% acima do qual os custos se elevam muito;
+
+### 2. Como os custos se comparam com a renda de fazendas e com os preços do carbono?
+
+- custos até 16% da renda das propriedades;                           
 
 - Os preços de $CO_2$ teriam que ser substancialmente elevados;
 
@@ -1150,10 +1146,8 @@ As propriedades podem ser certificadas em grupo ou individualmente. A figura b m
 ---
 
 # Métodos
-
- .panelset[
-   .panel[.panel-name[Matching]
-
+### Matching
+ 
 ```{r echo=FALSE, fig.align='center',out.width="55%"}
 
 knitr::include_graphics("figures/matching.png")
@@ -1162,40 +1156,13 @@ knitr::include_graphics("figures/matching.png")
    
 
 
-]
-
-
-   .panel[.panel-name[Resultado do pareamento]
-   
-.pull-left[
-```{r echo=FALSE, fig.align='center',out.width="100%"}
-
-knitr::include_graphics("figures/sup_smd_ma.jpeg")
-
-```
-]
-
-.pull-right[
-```{r echo=FALSE, fig.align='center',out.width="100%"}
-
-knitr::include_graphics("figures/sup_smd_ce.jpeg")
-
-```
-]
-
-]
-
-]
-
 ???
 
 Pra comparar as propriedades certificadas e controle, a gente usou um procedimento estatistico chamado matching.
 
 Nele, a gente pegou caracteristicas que a gente considerou importante tanto pras propriedades controle como pras tratamento e selecionou no caso das controle, as propriedades que eram semelhantes as tratadas, com exceção da certificação.
 
-Apenas pra ilustrar, o resultado do matching foi esse:
 
-pras variaveis que a gente escolheu (mencionar algumas), a diferença ebntre os grupos antes do matching e depois foi reduzida pra todas as variáveis.
 
 
 ---
@@ -1205,10 +1172,10 @@ pras variaveis que a gente escolheu (mencionar algumas), a diferença ebntre os 
 
 **Diferença-das-diferenças (did)** com $t_0$ variando:
 
-$$ variáveis \ dependentes \sim variáveis \ independentes $$
+$$ variáveis \ resposta \sim tratamento: \ tempo $$
 .pull-left[
 
-### Variáveis dependentes
+### Variáveis resposta
 
 - taxa de desmatamento;
 
@@ -1223,7 +1190,7 @@ $$ variáveis \ dependentes \sim variáveis \ independentes $$
 
 .pull-right[
 
-### Variáveis independentes
+### Variáveis preditoras
 
 - tratamento;
 - tempo;
@@ -1234,7 +1201,7 @@ $$ variáveis \ dependentes \sim variáveis \ independentes $$
 
 ???
 
-Depois de parar a propriedades, a gente usou uma outra técnica chamado de diferença das diferenças, em que a gente comparou a diferença entre nossas variáveis de interesse nos grupos tratamento e controle. 
+Depois de parar a propriedades, a gente usou uma outra técnica chamado de diferença das diferenças, em que a gente comparou a diferença entre nossas variáveis de interesse nos grupos tratamento e controle fazendo uma regressão entre as variáveis resposta e a interação entre o tratamento (certificação) e o tempo;
 
 A ideia é olhar pra trajetória dessas variáveis antes e depois da certificação e ver se a adoção da certificação influenciou nessa trajetória
 
@@ -1306,7 +1273,7 @@ Efeito de antecipação
 
 ```{r echo=FALSE, fig.align='center',out.width="100%"}
 
-knitr::include_graphics("figures/temp_leg.jpg")
+knitr::include_graphics("figures/temp_leg_ed.jpg")
 
 ```
 
@@ -1368,6 +1335,8 @@ Aqui a gente considerou a certificação como acontecendo 1 , 2 ou 3 anos antes 
 
 .panelset[ .panel[.panel-name[Capítulo 2]
    
+### Principais fatores determinantes da quantidade e localização de RL?
+
  
 - decisões de manejo referentes a reservas privadas são tomadas para maximizar renda das propriedades;
 
@@ -1379,6 +1348,7 @@ Aqui a gente considerou a certificação como acontecendo 1 , 2 ou 3 anos antes 
 
    .panel[.panel-name[Capitulo 3]
 
+### Avaliar o balanço de custos e benefícios de restaurar propriedades agrícolas?
 
 - é  possível  aliar a manutenção ou aumento da produção agrícola com maior proteção da biodiversidade e sequestro de carbono da atmosfera;
 
@@ -1387,6 +1357,8 @@ Aqui a gente considerou a certificação como acontecendo 1 , 2 ou 3 anos antes 
 ]
 
    .panel[.panel-name[Capitulo 4]
+
+### A certificação agrícola tem efeitos quantificáveis para a conservação?
 
 - a certificação  em uma região de agricultura consolidada não teve um efeito detectável em reduzir o desmatamento ou em aumentar a taxa de regeneração de vegetação nativa;
 
@@ -1510,3 +1482,30 @@ class: hide-count
 knitr::include_graphics("fotos/fam.jpg")
 
 ```
+
+---
+
+count: false
+class: hide-count
+
+# Agradecimentos
+
+```{r echo=FALSE, fig.align='center', out.width=300}
+
+knitr::include_graphics("fotos/Ju.jpeg")
+
+```
+
+---
+
+count: false
+class: hide-count
+
+# Agradecimentos
+
+```{r echo=FALSE, fig.align='center', out.width=600}
+
+knitr::include_graphics("figures/mic-drop-obama.gif")
+
+```
+
