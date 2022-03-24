@@ -9,15 +9,6 @@
     <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="libs/panelset-0.2.6/panelset.css" rel="stylesheet" />
     <script src="libs/panelset-0.2.6/panelset.js"></script>
-    <script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
-    <script src="libs/jquery-3.5.1/jquery.min.js"></script>
-    <link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
-    <script src="libs/datatables-binding-0.18/datatables.js"></script>
-    <link href="libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
-    <link href="libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
-    <script src="libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
-    <link href="libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
-    <script src="libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
     <link rel="stylesheet" href="css/nhsr.css" type="text/css" />
     <link rel="stylesheet" href="css/nhsr-fonts.css" type="text/css" />
   </head>
@@ -52,7 +43,7 @@ background-size: contain
 
 .pull-left[
 
-## Introdução geral
+## Introdução geral (capítulo 1)
 
 ## Capítulo 2
 
@@ -90,23 +81,12 @@ class: inverse, middle, center
 
 A maioria dos trabalhos de Ecologia começa com uma perspectiva sombria sobre o nosso planeta;
 
+- de fato existe uma crise de biodiversidade sem precedentes
 
----
+- mudanças climáticas são uma ameça
 
+- poluição presente em todos os cantos
 
-
-&lt;img src="figures/rockstrom_planet_bound.png" width="60%" style="display: block; margin: auto;" /&gt;
-
-.footnote[
-*Rockström, J.et al. A safe operating space for humanity. Nature (2009).*
-]
-???
-
-- Eu resolvi seguir a mesma linha.
-
-- Essa figura é de um trabalho já clássico do Johan Rockstrom em que os autores traçaram os limites planetários para manter o planeta com condições de sustentar vida como conhecemos;
-
-- Dentre os principais limite, a perda de biodiversidade, as mudanças climáticas e a poluição por Nitrogênio já ultrapassaram os limites seguros!
 
 ---
 
@@ -122,7 +102,7 @@ A maioria dos trabalhos de Ecologia começa com uma perspectiva sombria sobre o 
 
 ???
 
-- Ultrapassar esses limites implica em graves consequências para nós;
+- mas eu queria enfocar justamente nos benefícios da natureza;
 
 - A natureza provê benefícios fundamentais para nõs, que são conhecidos também como serviços ecossistêmicos;
 
@@ -183,10 +163,34 @@ A maioria dos trabalhos de Ecologia começa com uma perspectiva sombria sobre o 
 
 - a agricultura é o principal vetor de conversão de ambientes naturais e ocupa hj 30-40% da superficie terrestre. Praticamente toda área não coberta por gelo ou desertos;
 
+- por toda a extensão que ela ocupa, não da pra pensar em conservação sem tratar justamente da conservação em áreas agrícolas;
 
 ---
 
-# Intensificação ecológica da agricultura
+&lt;img src="figures/bending_curve.jpg" width="85%" style="display: block; margin: auto;" /&gt;
+
+
+.footnote[
+*Leclère, et al. Bending the curve of terrestrial biodiversity needs an integrated strategy. Nature (2020).
+.*
+]
+
+
+???
+
+
+para reverter os efeitos da perda de biodiversidade e das mudanças climáticas e assumir uma trajetoria sustentável:
+
+- tornar a prducao mais sustentável;
+- recuperar áreas degradas;
+- consumo mais sustentável
+
+
+
+
+---
+
+# Intensificação ~~convencional~~ ecológica da agricultura
 
 .pull-left[
 
@@ -215,6 +219,10 @@ A maioria dos trabalhos de Ecologia começa com uma perspectiva sombria sobre o 
 
 ???
 
+
+-  demanda crescente por prod. agric. mas isso tem que ser feito sem os impactos da intensificacao concencional 
+
+
 - dada a situação posta, existe um desafio que a gente precisa enfrentar: como produzir de forma mais sustentável;
 
 - A gente precisa de uma intensificação ecológica da agriculutra: ou seja, favorecer os organimos que provêem os SE.
@@ -231,6 +239,8 @@ A maioria dos trabalhos de Ecologia começa com uma perspectiva sombria sobre o 
 - Na foto a gente vê uma abelha nativa polinizando uma flor de café, que depois vai gerar os frutos.
 
 - Além disso, restaurar florestas em áreas agrícolas retira até 3 toneladas carbono da atmosfera por ha, reduzindo os efeitos do aquecimento global;
+
+
 ---
 
 # Políticas de conservação
@@ -338,7 +348,7 @@ class: inverse,  middle, center
 
 &lt;br&gt;
 
-#### Francisco d’Albertas, Adrian González-Chaves, Clarice Borges-Matosa, Vitor Zago de Almeida Paciello, Martine Maron, Jean Paul Metzger
+#### Francisco d’Albertas, Adrian González-Chaves, Clarice Borges-Matos, Vitor Zago de Almeida Paciello, Martine Maron, Jean Paul Metzger
 
 &lt;br&gt;
 &lt;br&gt;
@@ -492,13 +502,8 @@ background-image: url("figures/coffeeBR.jfif")
 ---
 # Métodos
 
-.pull-left[
-&lt;img src="figures/box1_1.jpg" width="100%" style="display: block; margin: auto;" /&gt;
-]
 
-.pull-right[
-&lt;img src="figures/box1_2.jpg" width="100%" style="display: block; margin: auto;" /&gt;
-]
+&lt;img src="figures/box1_1_2.jpg" width="1000" style="display: block; margin: auto;" /&gt;
 
 
 ???
@@ -511,121 +516,14 @@ A figura mostra uma das propriedades analisadas e os diferentes usos que a gente
 - areas que foram identificadas como RL mas que precisarão ser restauradas (ou compensadas)
 
 ---
-
-# Métodos
-### Análise dos dados
-
-Modelos hierárquicos com distribuição binomial de probabilidades
-
-
-
- .panelset[
-   .panel[.panel-name[Pergunta 1]
-   
-   
-
-   $$ Proporção \ RL \sim variaveis \ independentes $$
-&lt;img src="figures/cat_RL.png" width="446" style="display: block; margin: auto;" /&gt;
-   
-&lt;img src="figures/donut_box2.png" width="20%" style="display: block; margin: auto;" /&gt;
-     
-   
-   
-   ]
-
-   .panel[.panel-name[Pergunta 2]
-
-$$ Tipo \ de \ uso  \sim variaveis \ independentes $$
-&lt;img src="figures/box1_1.jpg" width="40%" style="display: block; margin: auto;" /&gt;
-
-
-
-   ]
-   
-   .panel[.panel-name[variáveis independentes]
-
-
-&lt;style type="text/css"&gt;
-    /* Table width = 100% max-width */
-
-    .remark-slide table{
-        width: 100%;
-    }
-
-    /* Change the background color to white for shaded rows (even rows) */
-
-    .remark-slide thead, .remark-slide tr:nth-child(2n) {
-        background-color: white;
-    }
-&lt;/style&gt;
-
-.scroll-box-10[
-
-<div id="htmlwidget-143fa09755bb0c3989bd" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-143fa09755bb0c3989bd">{"x":{"filter":"none","data":[["Aptidão agrícola","Diversidade usos solo","Irrigação","Custo de oportunidade","Tamanho da propriedade","Proporção vegetação","Proporção de pastagem","Proporção de APP","Custo de transporte","Distância APPs","Distancia vegetação"],["1,2","1","1","1,2","1","1","1","1","1,2","2","2"]],"container":"<table class=\"compact\">\n  <thead>\n    <tr>\n      <th>Variável<\/th>\n      <th>Pergunta<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"tBp","pageLength":8,"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[8,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
-]
-   
-   
-   
-   
-   ]
-   
-   ]
-   
-   
-  
-???
-
-Pra conseguir as respostas que a gente queria, a gente trabalhou com modelos hierarquicos binomiais.
-
-No caso da pergunta 1, eu categorizei as propriedades em 4 classes.
-
-E relacionei essas classes com uma série de fatores, que eu to chamando de variáveis independenstes, que poderiam explicar a qual classe de propriedade aquela dada fazenda pertencia.
-
-Na pergunta 2, eu sorteei uma serie de pontos dentro das propriedades e calculei nesse caso como cada tipo de uso -- aqueles q eu ja expliquei -- poderiam ser explicados por algumas variaveis que a gente considerou importante
-
-quais foram elas?
-
-ler slide
-
----
 # Resultados e Discussão
 
 
- .panelset[
-   .panel[.panel-name[Tamanho de efeito]
-
-&lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="figures/fig3_cap1.jpg" alt="Proporção de RL" width="60%" /&gt;
-&lt;p class="caption"&gt;Proporção de RL&lt;/p&gt;
-&lt;/div&gt;
-   
-&lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="figures/fig4_cap1.jpg" alt="Localização RL" width="60%" /&gt;
-&lt;p class="caption"&gt;Localização RL&lt;/p&gt;
-&lt;/div&gt;
-     
-   
-   
-   ]
-
-   .panel[.panel-name[Representação gráfica]
-
+ 
 &lt;img src="figures/graphical_abstract_v07-02.png" width="95%" style="display: block; margin: auto;" /&gt;
 
 
-
-   ]
-   
-]
-
 ???
-
-Eu resolvi apresentar primeiro aqui a forma que eu avaliei os resultados no artigo publicado.
-
-Nesses gráficos, a gente tem as variáveis independentes que eu acabei de descrever e uma medida do tamanho do efeito delas que é calculada pelo modelo. A barra horizontal eh uma medida da incerteza desse efeito. Quando ela cruza o zero, a gente considerou que a variável em questão não tinha um efeito importante pra ser considerado, afinal dentro da incerteza o efeito podia ser até 0. 
-
-Eu fiz isso pras 2 perguntass.
 
 Mas a gente preparou tb uma figura de síntese do artigo, que traz as msg principais:
 
@@ -668,7 +566,7 @@ background-size: contain
 
 
    
-- políticas de intentivo a restauração de RL (ex. PSA)
+- políticas de incentivo a restauração de RL (ex. PSA)
   
   
    
@@ -716,31 +614,6 @@ class: inverse,  middle, center
 &lt;br&gt;
 &lt;br&gt;
 
-
----
-
-# Introdução
-
-&lt;img src="figures/bending_curve.jpg" width="75%" style="display: block; margin: auto;" /&gt;
-
-
-.footnote[
-*Leclère, et al. Bending the curve of terrestrial biodiversity needs an integrated strategy. Nature (2020).
-.*
-]
-
-???
-
-Eu comecei essa apresentação falando da ameaça a biodiversidade 
-
-E tb da importância da restauração, inclsusive em propriedades privadas!
-
-
-E terminei o capitulo anterior falando sobre a importancia da restauração planejada, pra pra reverter a perda de biodiv. e serviços.
-
-
-Eu gosto mto dessa figura pq ela iolutsra bem a necessidade de a gente  adotar uma trajetória de recuperação, que inclui esforços de conservação e uma produção mais sustentável, entre outros fatores;
-
 ---
 background-image: url("figures/restoration_decade.jpg")
 background-size: contain
@@ -759,6 +632,13 @@ background-size: contain
 ]
 
 ???
+
+Eu comecei essa apresentação falando da ameaça a biodiversidade 
+
+E tb da importância da restauração, inclsusive em propriedades privadas!
+
+
+E terminei o capitulo anterior falando sobre a importancia da restauração planejada, pra pra reverter a perda de biodiv. e serviços.
 
 Diversos paises se comprometeram com ações de restauração. 
 
@@ -820,6 +700,7 @@ Pra responder a essa pergunta a gente trabalhou na mesma regiao do capitulo 1, f
 
 ---
 # Métodos
+
 
 
  .panelset[
@@ -924,11 +805,17 @@ Esses custos variaram entre 120-40 dolares por tonelada, oq eh bastante mais doq
 ---
 # Resultados e Discussão
 
-- é possível compensar os custos de restauração com aumento de produtividade em algumas situações (propriedades com &gt;10% vegetação e meta de até 25%);
+### 1. A restauração pode resultar em benefícios financeiros? quais situações?
+
+- é possível compensar os custos de restauração com aumento de produtividade em algumas situações (&gt;10% vegetação e meta de até 25%);
 
 - Proprietários que historicamente desmataram menos tiveram um benefício;
 
 - Existe um limiar de 25% acima do qual os custos se elevam muito;
+
+### 2. Como os custos se comparam com a renda de fazendas e com os preços do carbono?
+
+- custos até 16% da renda das propriedades;                           
 
 - Os preços de `\(CO_2\)` teriam que ser substancialmente elevados;
 
@@ -1074,30 +961,11 @@ As propriedades podem ser certificadas em grupo ou individualmente. A figura b m
 ---
 
 # Métodos
-
- .panelset[
-   .panel[.panel-name[Matching]
-
+### Matching
+ 
 &lt;img src="figures/matching.png" width="55%" style="display: block; margin: auto;" /&gt;
    
 
-
-]
-
-
-   .panel[.panel-name[Resultado do pareamento]
-   
-.pull-left[
-&lt;img src="figures/sup_smd_ma.jpeg" width="100%" style="display: block; margin: auto;" /&gt;
-]
-
-.pull-right[
-&lt;img src="figures/sup_smd_ce.jpeg" width="100%" style="display: block; margin: auto;" /&gt;
-]
-
-]
-
-]
 
 ???
 
@@ -1105,9 +973,7 @@ Pra comparar as propriedades certificadas e controle, a gente usou um procedimen
 
 Nele, a gente pegou caracteristicas que a gente considerou importante tanto pras propriedades controle como pras tratamento e selecionou no caso das controle, as propriedades que eram semelhantes as tratadas, com exceção da certificação.
 
-Apenas pra ilustrar, o resultado do matching foi esse:
 
-pras variaveis que a gente escolheu (mencionar algumas), a diferença ebntre os grupos antes do matching e depois foi reduzida pra todas as variáveis.
 
 
 ---
@@ -1117,10 +983,10 @@ pras variaveis que a gente escolheu (mencionar algumas), a diferença ebntre os 
 
 **Diferença-das-diferenças (did)** com `\(t_0\)` variando:
 
-$$ variáveis \ dependentes \sim variáveis \ independentes $$
+$$ variáveis \ resposta \sim tratamento: \ tempo $$
 .pull-left[
 
-### Variáveis dependentes
+### Variáveis resposta
 
 - taxa de desmatamento;
 
@@ -1135,7 +1001,7 @@ $$ variáveis \ dependentes \sim variáveis \ independentes $$
 
 .pull-right[
 
-### Variáveis independentes
+### Variáveis preditoras
 
 - tratamento;
 - tempo;
@@ -1146,7 +1012,7 @@ $$ variáveis \ dependentes \sim variáveis \ independentes $$
 
 ???
 
-Depois de parar a propriedades, a gente usou uma outra técnica chamado de diferença das diferenças, em que a gente comparou a diferença entre nossas variáveis de interesse nos grupos tratamento e controle. 
+Depois de parar a propriedades, a gente usou uma outra técnica chamado de diferença das diferenças, em que a gente comparou a diferença entre nossas variáveis de interesse nos grupos tratamento e controle fazendo uma regressão entre as variáveis resposta e a interação entre o tratamento (certificação) e o tempo;
 
 A ideia é olhar pra trajetória dessas variáveis antes e depois da certificação e ver se a adoção da certificação influenciou nessa trajetória
 
@@ -1208,7 +1074,7 @@ No caso do cerrado, nenhuma das variaveis parece ter sofrido um efeito significa
 Efeito de antecipação
 
 
-&lt;img src="figures/temp_leg.jpg" width="100%" style="display: block; margin: auto;" /&gt;
+&lt;img src="figures/temp_leg_ed.jpg" width="100%" style="display: block; margin: auto;" /&gt;
 
 ???
 
@@ -1268,6 +1134,8 @@ Aqui a gente considerou a certificação como acontecendo 1 , 2 ou 3 anos antes 
 
 .panelset[ .panel[.panel-name[Capítulo 2]
    
+### Principais fatores determinantes da quantidade e localização de RL?
+
  
 - decisões de manejo referentes a reservas privadas são tomadas para maximizar renda das propriedades;
 
@@ -1279,6 +1147,7 @@ Aqui a gente considerou a certificação como acontecendo 1 , 2 ou 3 anos antes 
 
    .panel[.panel-name[Capitulo 3]
 
+### Avaliar o balanço de custos e benefícios de restaurar propriedades agrícolas?
 
 - é  possível  aliar a manutenção ou aumento da produção agrícola com maior proteção da biodiversidade e sequestro de carbono da atmosfera;
 
@@ -1287,6 +1156,8 @@ Aqui a gente considerou a certificação como acontecendo 1 , 2 ou 3 anos antes 
 ]
 
    .panel[.panel-name[Capitulo 4]
+
+### A certificação agrícola tem efeitos quantificáveis para a conservação?
 
 - a certificação  em uma região de agricultura consolidada não teve um efeito detectável em reduzir o desmatamento ou em aumentar a taxa de regeneração de vegetação nativa;
 
@@ -1386,6 +1257,25 @@ class: hide-count
 # Agradecimentos
 
 &lt;img src="fotos/fam.jpg" width="90%" style="display: block; margin: auto;" /&gt;
+
+---
+
+count: false
+class: hide-count
+
+# Agradecimentos
+
+&lt;img src="fotos/Ju.jpeg" width="300" style="display: block; margin: auto;" /&gt;
+
+---
+
+count: false
+class: hide-count
+
+# Agradecimentos
+
+&lt;img src="figures/mic-drop-obama.gif" width="600" style="display: block; margin: auto;" /&gt;
+
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
